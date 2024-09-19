@@ -1,0 +1,60 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+.header-section-container{
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+margin: 10px;
+}
+.game-container{
+width: 50vw;
+margin: auto;
+height: 100vh;
+background-color: rgb(197, 210, 14);
+}
+.computer-choice{
+}
+.computer-choice-icon-container{
+    margin-left: auto;
+    margin-right: auto;
+ border: 2px dashed black;
+    width: 150px;
+    height: 150px;
+}
+.center-divider{
+  position: absolute;
+  top: 40%;
+  transform: translate(0, -50%);
+  padding: 10px;
+  width: 50vw;
+  background-color: rgb(109, 90, 7);
+}
+.user-choice{
+padding-top: 11vh;
+height: 46vh;
+}
+.user-choice-icon{
+  margin-left: auto;
+  margin-right: auto;
+border: 2px dashed black;
+  width: 150px;
+  height: 150px;
+  margin-top: 30px;
+}
+.ovearall-selection-cards{
+display: flex;
+flex-direction: row;
+gap: 10px;
+align-items: center;
+justify-content: center;
+margin-top: 20px;
+}
+.selection-card{
+  width: 100px;
+  height: 100px;
+  background-color: white;
+  border-radius: 10px;
+}
