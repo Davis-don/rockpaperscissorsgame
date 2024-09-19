@@ -1,16 +1,15 @@
-// alert("helooo")
-// let usersectionIcon= document.querySelector('.userH2').innerHTML
-// let runRock = ()=>{
-// usersectionIcon = '&#9994;'
-// }
-// let runPaper = ()=>{
-//     usersectionIcon = '&#9995;' 
-// }
-// let runScissors = ()=>{
-//     usersectionIcon = "&#9996;"
-// }
-let changeItemIcon=(itemReceived)=>{
-    //alert(itemReceived);
-    document.querySelector('.userH2').innerHTML = itemReceived
+function randomIntFromInterval(min, max) { // min and max included 
+    return Math.floor(Math.random() * (max - min + 1) + min);
+  }
 
+  const choices = ["&#9994;","&#9995;","&#9996;"];
+
+
+let changeItemIcon=(itemReceived)=>{
+    //set user icon
+    document.querySelector('.userH2').innerHTML = itemReceived
+    //randomise
+    let randomValue=randomIntFromInterval(0,2);
+    //set computer icon
+    document.querySelector(".computerH2").innerHTML= choices[randomValue];
 }
