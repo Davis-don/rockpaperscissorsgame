@@ -1,7 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Silkscreen:wght@400;700&display=swap');
+
+
 *{
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
+}
+.silkscreen-bold {
+  font-family: "Silkscreen", sans-serif;
+  font-weight: 700;
+  font-style: normal;
 }
 .header-section-container{
 display: flex;
@@ -30,7 +38,7 @@ background-color: rgb(197, 210, 14);
 }
 .center-divider{
   position: absolute;
-  top: 40%;
+  top: 43%;
   transform: translate(0, -50%);
   padding: 10px;
   width: 50vw;
@@ -46,7 +54,7 @@ height: 46vh;
 border: 2px dashed black;
   width: 150px;
   height: 150px;
-  margin-top: 30px;
+  margin-top: 20px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -62,7 +70,7 @@ margin-top: 20px;
 }
 .selection-card{
   width: 100px;
-  height: 100px;
+  height: 110px;
   background-color: white;
   border-radius: 10px;
   display: flex;
