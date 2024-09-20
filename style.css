@@ -17,6 +17,7 @@ html{
   height: 100vh;
   background-color: rgb(197, 210, 14);
   }
+  /* ----------------------------------------------------------------------------- */
 /* Start of header section styling */
 .header-section-container{
 display: flex;
@@ -48,27 +49,59 @@ justify-content: center;
   }
 }
 /* End of header section styling */
-/* .computer-choice{
+/* ------------------------------------------------------------------------------- */
+/* Start of computer choice styling section */
+.computer-choice{
+}
+.computer-text{
+text-align: center;
+font-size: 2rem;
 }
 .computer-choice-icon-container{
-    margin-left: auto;
-    margin-right: auto;
- border: 2px dashed black;
-    width: 150px;
-    height: 150px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
-.center-divider{
-  position: absolute;
-  top: 43%;
-  transform: translate(0, -50%);
+  margin: auto;
+  border: 2px dashed black;
+  width: max-content;
+  height: max-content;
   padding: 10px;
-  width: 50vw;
-  background-color: rgb(109, 90, 7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
+.computerH2{
+  font-size: 100px;
+}
+@media screen and (max-width: 570px) {
+.computer-text{
+  text-align: center;
+font-size:1.6rem;
+}
+}
+@media screen and (max-width: 324px) {
+  .computerH2{
+    font-size:25vw;
+  }
+  .computer-text{
+    text-align: center;
+  font-size:7vw;
+  }
+  }
+/* End of computer choice styling section */
+/* -------------------------------------------------------------------------------- */
+/* Start of center container div */
+.center-divider{
+  background-color:rgb(109, 90, 7) ;
+  padding: 2rem;
+  margin-top: 2rem;
+}
+.updateText{
+  font-size: 2.7rem;
+}
+@media screen and (max-width: 765px) {
+  .updateText{
+  font-size: 2.5vw;
+  }
+  }
+/* End of center container div */
 .user-choice{
 padding-top: 11vh;
 height: 46vh;
@@ -102,4 +135,4 @@ margin-top: 20px;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-} */
+}
