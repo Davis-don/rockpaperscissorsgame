@@ -1,64 +1,130 @@
 @import url('https://fonts.googleapis.com/css2?family=Silkscreen:wght@400;700&display=swap');
 
-
 *{
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
 }
-.silkscreen-bold {
+html{
   font-family: "Silkscreen", sans-serif;
   font-weight: 700;
   font-style: normal;
+  font-size: 62.5%;
 }
+.game-container{
+  width: max-content;
+  margin: auto;
+  height: 100vh;
+  background-color: rgb(197, 210, 14);
+  }
+  /* ----------------------------------------------------------------------------- */
+/* Start of header section styling */
 .header-section-container{
 display: flex;
 flex-direction: row;
 justify-content: space-between;
-margin: 10px;
+padding: 1rem;
+flex-wrap: wrap;
 }
-.game-container{
-width: 50vw;
-margin: auto;
-height: 100vh;
-background-color: rgb(197, 210, 14);
+@media screen and (max-width: 950px) {
+.header-text{
+  font-size: 2rem;
+  text-wrap: nowrap;
 }
+.header-section-container{
+  display: flex;
+  flex-direction: row;
+justify-content: center;
+  padding: 1rem;
+  flex-wrap: nowrap;
+  align-items: center;
+  gap: 1rem;
+
+  }
+}
+@media screen and (max-width: 950px) {
+  .header-text{
+    font-size: 1.5rem;
+    text-wrap: nowrap;
+  }
+}
+@media screen and (max-width: 920px) {
+  .header-text{
+    font-size: 1.9vw;
+    text-wrap: nowrap;
+  }
+}
+/* End of header section styling */
+/* ------------------------------------------------------------------------------- */
+/* Start of computer choice styling section */
 .computer-choice{
 }
+.computer-text{
+text-align: center;
+font-size: 2rem;
+}
 .computer-choice-icon-container{
-    margin-left: auto;
-    margin-right: auto;
- border: 2px dashed black;
-    width: 150px;
-    height: 150px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
-.center-divider{
-  position: absolute;
-  top: 43%;
-  transform: translate(0, -50%);
-  padding: 10px;
-  width: 50vw;
-  background-color: rgb(109, 90, 7);
-}
-.user-choice{
-padding-top: 11vh;
-height: 46vh;
-}
-.user-choice-icon{
-  margin-left: auto;
-  margin-right: auto;
-border: 2px dashed black;
-  width: 150px;
-  height: 150px;
-  margin-top: 20px;
+  margin: auto;
+  border: 2px dashed black;
+  width: max-content;
+  height: max-content;
   display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+.computerH2{
+  font-size: 100px;
+}
+@media screen and (max-width: 570px) {
+.computer-text{
+  text-align: center;
+font-size:1.6rem;
+}
+}
+@media screen and (max-width: 324px) {
+  .computerH2{
+    font-size:25vw;
+  }
+  .computer-text{
+    text-align: center;
+  font-size:7vw;
+  }
+  }
+/* End of computer choice styling section */
+/* -------------------------------------------------------------------------------- */
+/* Start of center container div */
+.center-divider{
+  background-color:rgb(109, 90, 7) ;
+  padding: 0.5rem;
+  margin-top: 1rem;
+}
+.updateText{
+  font-size: 2.7rem;
+}
+@media screen and (max-width: 765px) {
+  .updateText{
+  font-size: 2.5vw;
+  }
+  }
+/* End of center container div */
+/* --------------------------------------------------------------------------------- */
+/* Start of player section styling */
+.user-choice{
+  margin-top:0.5rem;
+/* padding-top:vh;
+height: 46vh; */
+}
+.player-text{
+font-size:2.3rem ;
+}
+.userH2{
+  font-size:80px;
+}
+.user-choice-icon{
+  width: max-content;
+  height: max-content;
+  border: 2px dashed black;
+  margin: auto;
 }
 .ovearall-selection-cards{
 display: flex;
@@ -67,6 +133,7 @@ gap: 10px;
 align-items: center;
 justify-content: center;
 margin-top: 20px;
+padding: 10px;
 }
 .selection-card{
   width: 100px;
@@ -78,3 +145,25 @@ margin-top: 20px;
   justify-content: center;
   align-items: center;
 }
+.cards-bottom-text{
+font-size: 70px;
+}
+@media screen and (max-width: 760px) {
+  .player-text{
+    font-size: 2.5vw;
+  }
+  .userH2{
+    font-size: 8rem;
+  }
+  }
+  @media screen and (max-width: 572px) {
+    .selection-card{
+      width: max-content;
+      height: max-content;
+    }
+    .selection-card{
+    font-size: 2vw;
+    }
+  }
+/* End of player section styling */
+/* ----------------------------------------------------------------------------------- */
